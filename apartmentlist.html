@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6 - modul Prezentatsiya</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img class="logo-pic" src="./images/logo.svg" alt="This is Deluxe company logo image">
+          </a>
+          <ul class="header-nav navbar-nav flex-row column-gap-5 pe-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Услуги
+              </a>
+              <ul class="dropdown-menu position-absolute">
+                <li><a class="dropdown-item" href="#">Купить</a></li>
+                <li><a class="dropdown-item" href="#">Арендовать</a></li>
+                <li><a class="dropdown-item" href="#">Продать</a></li>
+                <li><a class="dropdown-item" href="#">Оценка недвижимости</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Блог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="hamburger-box d-flex align-items-center column-gap-1">
+            <img class="header-icons" src="./images/search.svg" alt="This is search icon image" width="40"
+            height="40">
+            <img class="header-icons" src="./images/like.svg" alt="This is like icon image" width="40"
+            height="40">
+            <img class="header-call" src="./images/call.svg" alt="This is call icon image" width="40"
+            height="40">
+            <div class="header-dropdown dropdown">
+              <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ru
+              </button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-items"><a class="dropdown-item" href="#">RU</a></li>
+                <li class="dropdown-items"><a class="dropdown-item" href="#">UZ</a></li>
+                <li class="dropdown-items"><a class="dropdown-item" href="#">EN</a></li>
+              </ul>
+            </div>
+            <button class="navbar-toggler d-flex justify-content-center align-items-center bg-dark rounded-circle" style="width: 40px; height: 40px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <img src="./images/hamburger-icon.svg" alt="This is hamburger-icon image">
+            </button>
+          </div>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header d-flex justify-content-between">
+              <a class="offcanvas-title" href="./index.html" id="offcanvasNavbarLabel">
+                <img class="logo-pic" src="./images/logo.svg" alt="">
+              </a>
+              <div class="hamburger-box d-flex align-items-center">
+                <div class="dropdown">
+                  <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Ru
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-items"><a class="dropdown-item" href="#">RU</a></li>
+                    <li class="dropdown-items"><a class="dropdown-item" href="#">UZ</a></li>
+                    <li class="dropdown-items"><a class="dropdown-item" href="#">EN</a></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+            </div>
+            
+            
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Услуги
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Купить</a></li>
+                    <li><a class="dropdown-item" href="#">Арендовать</a></li>
+                    <li><a class="dropdown-item" href="#">Продать</a></li>
+                    <li><a class="dropdown-item" href="#">Оценка недвижимости</a></li>
+                  </ul>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">О нас</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Блог</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                  </li>
+                </li>
+              </ul>
+              <div class="header-pic-box d-flex column-gap-2">
+                <img class="header-icon" src="./images/search.svg" alt="This is search icon image">
+                <img class="header-icon" src="./images/like.svg" alt="This is like icon image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  
+  
+  <!-- main-start -->
+  
+  <main class="site-main">
+    
+    <section class="apartment">
+      <div class="container">
+        
+        <div class="logo-box">
+          <h1 class="logo mt-5">Квартиры</h1>
+        </div>
+        
+        <ul class="list d-flex flex-wrap gap-2 align-items-center list-unstyled">
+          
+          
+          
+          <li class="item-one">
+            <div class="btn-rayon dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Район
+              </a>
+              
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">г.Ташкент, Юнусабадский</a></li>
+                <li><a class="dropdown-item" href="#">г.Ташкент, Юнусабадский</a></li>
+                <li><a class="dropdown-item" href="#">г.Ташкент, Юнусабадский</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          
+          
+          
+          <li class="item-two">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Цена
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">$300 000</a></li>
+                <li><a class="dropdown-item" href="#">$500 000</a></li>
+                <li><a class="dropdown-item" href="#">$700 000</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="item-three">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Тип жилья
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          
+           
+          <li class="item-four">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Количество комнат 
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          
+          
+          <li class="item-five">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Срок сдачи
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </li>
+          
+         
+        
+          <div class="data d-flex">
+            <button class="p-2 border border-white bg-black align-items-center text-white" style="width: 170px; height: 53px;"><img src="./images/Vector.svg" alt=""> На карте</button>
+          </div>
+        </ul>
+
+
+       
+        <ul class="list-two list-unstyled">
+          <li class="mt-5 li-one">
+            <img class="apartment-pic mt-5 ms-2" src="./images/Rectangle (1).png" alt="">
+
+            <strong class="strong ms-2">Квартира в ЖК</strong>
+
+            <p class="text-one ms-2">г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира</p>
+
+            <p class="text-two ms-2">$300 000</p>
+          </li>
+
+
+
+          <li class="li-two">
+            <img class="apartment-pic ms-2 mt-4" src="./images/Rectangle 2.png" alt="">
+
+            <strong class="strong ms-2">Квартира, Ташкент</strong>
+
+            <p class="text-three ms-2">г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира</p>
+
+            <p class="text-four ms-2">$500 000</p>
+          </li>
+
+
+          <li class="li-three">
+            <img class="apartment-pic ms-2 mt-4" src="./images/Rectangle  3.png" alt="">
+
+            <strong class="strong ms-2">Студия</strong>
+
+            <p class="text-five ms-2">г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира</p>
+
+            <p class="text-six ms-2">$250 000</p>
+          </li>
+
+          
+          <li class="li-four">
+            <img class="apartment-pic mt-3 ms-2" src="./images/Rectangle  4.png" alt="">
+
+            <strong class="strong ms-2 ">Квартира в ЖК</strong>
+
+            <p class="text-seven ms-2">г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира</p>
+
+            <p class="text-eight ms-2 mt-3">$120 000</p>
+          </li>
+
+          <li class="li-five">
+            <img class="apartment-pic ms-2 mt-4" src="./images/Rectangle  5.png" alt="">
+
+            <strong class="strong ms-2">Новая квартира</strong>
+
+            <p class="text-nine ms-2">г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира</p>
+
+            <p class="text-ten ms-2 mt-3">$700 000</p>
+          </li>
+
+          <li class="li-six">
+            <img class="apartment-pic ms-2 mt-3" src="./images/Rectangle  6.png" alt="">
+
+            <strong class="strong ms-2">Новая квартира в ЖК</strong>
+
+            <p class="text-elewen ms-2">г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира</p>
+
+            <p class="text-twelven ms-2 mt-3">$330 000</p>
+          </li>
+
+          <li class="li-seven">
+            <img class="apartment-pic ms-2 mt-4" src="./images/Rectangle  7.png" alt="">
+
+            <strong class="strong ms-2 mt-3">Квартира в ЖК</strong>
+
+            <p class="ten-three ms-2 ">г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира</p>
+
+            <p class="ten-strings ms-2 mt-3">$300 000</p>
+          </li>
+
+          <li class="li-eight">
+            <img class="apartment-pic ms-2 mt-3" src="./images/Rectangle  8.png" alt="">
+
+            <strong class="strong ms-2 mt-3">Квартира, Ташкент</strong>
+
+            <p class="fifteen ms-2">г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира</p>
+
+            <p class="sixteen ms-2 mt-3">$500 000</p>
+          </li>
+
+          <li class="li-nine">
+            <img class="apartment-pic ms-2 mt-4" src="./images/Rectangle  9.png" alt="">
+
+            <strong class="strong ms-2 mt-3">Студия</strong>
+
+            <p class="seventeen ms-2">г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира</p>
+
+            <p class="eighteen ms-2 mt-3">$250 000</p>
+          </li>
+
+          <li class="li-ten">
+            <img class="apartment-pic ms-2 mt-3" src="./images/Rectangle 10.png" alt="">
+
+            <strong class="strong ms-2 mt-3">Квартира в ЖК</strong>
+
+            <p class="nineteen ms-2">г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира</p>
+
+            <p class="twenty ms-2 mt-3">$120 000</p>
+          </li>
+
+          <li class="li-elewen">
+            <img class="apartment-pic ms-2 mt-4" src="./images/Rectangle 11.png" alt="">
+
+            <strong class="strong ms-2 mt-3">Новая квартира</strong>
+
+            <p class="twenty-one ms-2">г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира</p>
+
+            <p class="twenty-two ms-2 mt-3">$700 000</p>
+          </li>
+
+          <li class="li-twelve">
+            <img class="apartment-pic ms-2 mt-3" src="./images/Rectangle 12.png" alt="">
+
+            <strong class="strong ms-2 mt-3">Новая квартира в ЖК</strong>
+
+            <p class="twenty-three ms-2">г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира</p>
+
+            <p class="twenty-narrow ms-2 mt-3">$330 000</p>
+          </li>
+
+          <div class="btn-group mt-5">
+            <a href="#" class="btn btn-outline-primary border me-1 ">1</a>
+            <a href="#" class="btn btn-outline-primary border me-1">2</a>
+            <a href="#" class="btn btn-outline-primary border me-1">3</a>
+            <a href="#" class="btn btn-outline-primary border me-1">4</a>
+            <a href="#" class="btn btn-outline-primary border me-1">...</a>
+            <a href="#" class="btn btn-outline-primary border me-1">10</a>
+          </div>
+
+        </ul>
+      
+
+
+      </div>
+    </section>
+  </main>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
